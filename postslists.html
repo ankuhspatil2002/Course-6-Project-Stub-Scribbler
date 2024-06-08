@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/postslist.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ScriBBler</div>
+        <div class="subheading">Explore, Imagine, Create</div>
+        <button id="signInBtn" class="btn blue-btn">Sign In</button>
+        <button id="signUpBtn" class="btn blue-btn">Sign Up</button>
+    </header>
+    
+    <main>
+        <div class="posts-container">
+            <!-- Repeat this block for each post -->
+            <div class="post-card">
+                <div class="post-header">
+                    <span class="username">user123</span>
+                    <span class="post-options"><i class="fas fa-ellipsis-h"></i></span>
+                    <span class="delete-post"><i class="fas fa-trash"></i></span>
+                </div>
+                <h3 class="post-title">Post Title</h3>
+                <p class="post-content">This is a short summary of the post content. It should be only a few lines long...</p>
+            </div>
+            <!-- Repeat this block for each post -->
+        </div>
+    </main>
+    
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this post?</p>
+            <button id="confirmDelete" class="btn green-btn">Yes</button>
+            <button id="cancelDelete" class="btn red-btn">No</button>
+        </div>
+    </div>
+    
+    <script src="/common.js"></script>
+    <script src="/postslist.js"></script>
+</body>
+</html>

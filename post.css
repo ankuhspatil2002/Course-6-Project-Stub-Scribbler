@@ -1,0 +1,119 @@
+body {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    font-family: 'Montez', cursive;
+    font-size: 2.5em;
+}
+
+.subheading {
+    font-size: 1.2em;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.blue-btn {
+    background-color: blue;
+    color: white;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-btn {
+    background-color: orange;
+    color: white;
+    margin: 0 10px;
+    padding: 20px 30px;
+}
+body {
+    background-color: #ffeedd;
+}
+
+.post-container {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.post-title, .post-content {
+    text-align: center;
+}
+
+.post-title {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.post-content {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.editable {
+    border: 2px solid pink;
+    padding: 5px;
+}
+
+.green-btn {
+    background-color: green;
+    color: white;
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.comments-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.comments-section h3 {
+    margin-top: 0;
+}
+
+.comment {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScriBBler</title>
+  <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/common.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">ScriBBler</div>
+    <div class="subheading">Explore, Imagine, Create</div>
+    <button id="signInBtn" class="btn blue-btn">Sign In</button>
+    <button id="signUpBtn" class="btn blue-btn">Sign Up</button>
+  </header>
+
+  <div class="main-buttons">
+    <button id="allPostsBtn" class="main-btn">All Posts</button>
+    <button id="createPostBtn" class="main-btn">Create Post</button>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div id="signUpModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Get Started</h2>
+      <input type="text" placeholder="Enter your name" id="name">
+      <input type="text" placeholder="Enter your username" id="username">
+      <input type="password" placeholder="Enter your password" id="password">
+      <input type="password" placeholder="Re-enter your password" id="confirmPassword">
+      <button id="signUpSubmit" class="btn green-btn">Sign Up</button>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Welcome Back!</h2>
+      <input type="text" placeholder="Enter your username" id="signInUsername">
+      <input type="password" placeholder="Enter your password" id="signInPassword">
+      <button id="signInSubmit" class="btn green-btn">Sign In</button>
+      <p>Not a member? <a href="#" id="switchToSignUp">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Create Post Modal -->
+  <div id="createPostModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Pen Your Post</h2>
+      <label for="postTitle">Title</label>
+      <input type="text" placeholder="Enter title of your post" id="postTitle">
+      <label for="postContent">Contents</label>
+      <textarea placeholder="Enter the contents of your post" id="postContent"></textarea>
+      <button id="createPostSubmit" class="btn green-btn">Create</button>
+    </div>
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>

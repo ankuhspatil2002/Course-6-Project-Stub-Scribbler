@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="/post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ScriBBler</div>
+        <div class="subheading">Explore, Imagine, Create</div>
+        <button id="signInBtn" class="btn blue-btn">Sign In</button>
+        <button id="signUpBtn" class="btn blue-btn">Sign Up</button>
+    </header>
+    
+    <main>
+        <div class="post-container">
+            <div class="post-header">
+                <span class="author-name">John Doe</span>
+                <button id="editBtn" class="btn blue-btn">
+                    Edit <i class="fas fa-edit"></i>
+                </button>
+            </div>
+            <h1 id="postTitle" class="post-title">Post Title</h1>
+            <p id="postContent" class="post-content">This is the content of the post. It can be multiple paragraphs long...</p>
+            <button id="likeBtn" class="btn green-btn">
+                <i class="fas fa-thumbs-up"></i> Like
+            </button>
+            <p id="likeStatus">Be the first one to like this!</p>
+            <input type="text" id="commentInput" placeholder="Leave a comment..." class="comment-input">
+            <button id="commentBtn" class="btn red-btn">Comment</button>
+            <div id="commentsSection" class="comments-section">
+                <h3>All Comments</h3>
+                <div id="commentsContainer"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/common.js"></script>
+    <script src="/post.js"></script>
+</body>
+</html>
